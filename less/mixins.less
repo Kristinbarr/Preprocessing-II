@@ -6,9 +6,18 @@
   align-items: @a;
 }
 
-.font(@size, @lh) {
+.font (@size, @lh) {
   font-family: 'Roboto', sans-serif;
   color: @font-color;
   font-size: @size;
   line-height: @lh;
+}
+
+.signupbutton (@size, @lh) {
+  .font(@size, @lh);
+  padding: .4rem 5.1rem;
+  border: 1px solid @silver;
+  border-radius: 1.5rem;
+  background-color: @button-bg;
+  color: @white;
 }
