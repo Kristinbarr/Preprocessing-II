@@ -1,1 +1,14 @@
 // Mixins in here
+
+.displayFlex (@j, @a) {
+  display: flex;
+  justify-content: @j;
+  align-items: @a;
+}
+
+.font(@size, @ln) {
+  font-family: 'Roboto', sans-serif;
+  color: @font-color;
+  font-size: @size;
+  line-height: @lh;
+}
