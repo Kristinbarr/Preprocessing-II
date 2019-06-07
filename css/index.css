@@ -209,15 +209,15 @@ nav ul a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 0 0 0;
+    margin: 0.2rem 0 0 0;
   }
   nav ul a {
     padding: 0 1rem;
-    margin: 0 2rem;
+    margin: 0 2.1rem;
   }
 }
 .footer {
-  width: 1000px;
+  width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
   margin: auto;
@@ -236,10 +236,11 @@ nav ul a {
   padding-bottom: 2rem;
 }
 .home .content-section {
-  margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -253,8 +254,8 @@ nav ul a {
   border-radius: 10px;
 }
 .home .inverse-content {
-  padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 3rem;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -272,10 +273,11 @@ nav ul a {
   border-radius: 10px;
 }
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
 }
 .home .content-pick .destination {
   width: 30%;
@@ -291,4 +293,84 @@ nav ul a {
   border-radius: 1.5rem;
   background-color: #17A2B8;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .home header {
+    margin: 0 2rem;
+  }
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 3rem 1rem 3rem 2rem;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+  .home .inverse-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 0 0 3rem 0;
+    margin: 0 1rem 3rem 2rem;
+  }
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .home .inverse-content .img-content img {
+    width: 98%;
+  }
+  .home .content-destination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 3rem 0;
+    margin: 0 1rem 0 2rem;
+    width: auto;
+  }
+  .home .content-destination img {
+    width: 100%;
+  }
+  .home .content-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem 0 0 0;
+    margin: 0 6.1rem;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .home .content-pick .destination .btn button {
+    font-family: 'Roboto', sans-serif;
+    color: #212529;
+    font-size: 1.8rem;
+    line-height: 2;
+    padding: 0.4rem 5rem;
+    border: 1px solid #C0C0C0;
+    border-radius: 1.5rem;
+    background-color: #17A2B8;
+    color: #FFFFFF;
+    width: 100%;
+  }
 }
