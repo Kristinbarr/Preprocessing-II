@@ -17,3 +17,25 @@ nav {
     }
   }
 }
+
+@media (max-width: 500px) {
+  nav {
+    .displayFlex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 1.7rem 0 0 0;
+    h1 {
+      font-size: 3rem;
+    }
+    ul {
+      .displayFlex(center, center);
+      margin: .5rem 0 0 0;
+      a {
+        padding: 0 1rem;
+        margin: 0 2rem;
+      }
+    }
+  }
+
+}

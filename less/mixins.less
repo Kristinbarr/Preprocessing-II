@@ -1,21 +1,21 @@
 // Mixins in here
 
-.displayFlex (@j, @a) {
+.displayFlex(@j, @a) {
   display: flex;
   justify-content: @j;
   align-items: @a;
 }
 
-.font (@size, @lh) {
+.font(@size, @lh) {
   font-family: 'Roboto', sans-serif;
   color: @font-color;
   font-size: @size;
   line-height: @lh;
 }
 
-.signupbutton (@size, @lh) {
-  .font(@size, @lh);
-  padding: .4rem 5.1rem;
+.signupButton(@h, @w) {
+  .font(1.8rem, 2);
+  padding: @h @w;
   border: 1px solid @silver;
   border-radius: 1.5rem;
   background-color: @button-bg;
