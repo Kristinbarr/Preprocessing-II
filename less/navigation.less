@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+nav {
+  .displayFlex(space-between, flex-end);
+  width: 1000px;
+  padding: 2.4rem 10rem;
+  border-bottom: 2px dashed @navigation-border;
+  margin: auto;
+  color: @font-color;
+  ul {
+    .displayFlex(flex-end, center);
+    margin-right: 1.3rem;
+    a {
+      .font(1.6rem, 2.5);
+      padding: 1.6rem;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    .displayFlex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 1.7rem 0 0 0;
+    h1 {
+      font-size: 3rem;
+    }
+    ul {
+      .displayFlex(center, center);
+      margin: .2rem 0 0 0;
+      a {
+        padding: 0 1rem;
+        margin: 0 2.1rem;
+      }
+    }
+  }
+
+}
